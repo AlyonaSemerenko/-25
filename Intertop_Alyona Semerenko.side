@@ -1,0 +1,342 @@
+{
+  "id": "97515e5c-816b-4731-8a24-4c9ddc707e3c",
+  "version": "2.0",
+  "name": "Intertop",
+  "url": "https://intertop.ua/uk-ua/",
+  "tests": [{
+    "id": "6154067a-b505-4f80-9cfb-8641e307132f",
+    "name": "Авторизація з невірним паролем",
+    "commands": [{
+      "id": "2f73ed23-9ff1-4b4c-b23a-bcc510e75593",
+      "comment": "",
+      "command": "open",
+      "target": "https://intertop.ua/uk-ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f552acd1-59bb-4d26-8dde-a9c818d89442",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9c6c304-c712-478a-85de-a5f005a6aecb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='auth_block']/div",
+      "targets": [
+        ["css=.auth-ico", "css:finder"],
+        ["xpath=//div[@id='auth_block']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00b37411-1d8f-4b71-9087-7c5a1988ba12",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_or_phone",
+      "targets": [
+        ["id=email_or_phone", "id"],
+        ["name=email_or_phone", "name"],
+        ["css=#email_or_phone", "css:finder"],
+        ["xpath=//input[@id='email_or_phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__84']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "semerenko.sss20@gmail.com"
+    }, {
+      "id": "7165d285-77e1-49cf-88cf-879361112b6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__87']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c385920e-685a-46c2-a406-0abdda86590f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__87']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "123123131"
+    }, {
+      "id": "ac7fe1e8-ec0f-4d56-a946-b428ea43e467",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-action",
+      "targets": [
+        ["css=.login-action", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='auth_block']/div[3]/div/div/div/div/div[3]/div/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83dad900-6126-4c0c-81a5-f81336e0c67c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=__BVID__68__BV_feedback_invalid_",
+      "targets": [
+        ["id=__BVID__68__BV_feedback_invalid_", "id"],
+        ["css=#\\__BVID__68__BV_feedback_invalid_", "css:finder"],
+        ["xpath=//div[@id='__BVID__68__BV_feedback_invalid_']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__68']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Неправильний логін чи пароль."
+    }, {
+      "id": "caa415e6-c543-4293-abf0-f6dd260035d2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=__BVID__71__BV_feedback_invalid_",
+      "targets": [],
+      "value": "Неправильний логін чи пароль."
+    }, {
+      "id": "226bc25f-16ad-4be7-b1db-16bed295ad6b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ae2d57d8-e4da-4144-933b-1015dff89b86",
+    "name": "Пошук товару",
+    "commands": [{
+      "id": "6c421f93-683b-4bd7-a1fc-e27e10ea602b",
+      "comment": "",
+      "command": "open",
+      "target": "https://intertop.ua/uk-ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ced299e6-cbe1-4b11-b8a6-17080f99879c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e231f6b1-71e5-4f66-bede-8cce84f193a0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=v_search_input",
+      "targets": [
+        ["id=v_search_input", "id"],
+        ["name=v_search_input", "name"],
+        ["css=#v_search_input", "css:finder"],
+        ["xpath=//input[@id='v_search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__52']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd770323-04ff-46b6-b6af-c1e4c6b2afcb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='v_search_input']",
+      "targets": [
+        ["id=v_search_input", "id"],
+        ["name=v_search_input", "name"],
+        ["css=#v_search_input", "css:finder"],
+        ["xpath=//input[@id='v_search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__74']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0e8aaa-551f-41e2-8174-9aec108b7f5e",
+      "comment": "",
+      "command": "type",
+      "target": "css=#v_search_input",
+      "targets": [
+        ["id=v_search_input", "id"],
+        ["name=v_search_input", "name"],
+        ["css=#v_search_input", "css:finder"],
+        ["xpath=//input[@id='v_search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__74']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Кросівки"
+    }, {
+      "id": "e5819d1b-7ad2-4934-bc6a-907a80b7c7fd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=#v_search_input",
+      "targets": [
+        ["id=v_search_input", "id"],
+        ["name=v_search_input", "name"],
+        ["css=#v_search_input", "css:finder"],
+        ["xpath=//input[@id='v_search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='__BVID__74']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "27014c62-d799-401b-9477-08827902d3f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active img",
+      "targets": [
+        ["css=.active img", "css:finder"],
+        ["xpath=//img[@alt='<div key=\"0\">Keen Uneek Snk</div><div key=\"1\">Кросівки</div>']", "xpath:img"],
+        ["xpath=//div[@id='carousel_lllw7ilzgv']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db465f0a-663b-4aa7-8f56-237d2d428d78",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3825fef0-188f-420e-9776-1a63f66c2824",
+    "name": "Зміна мови на сайті",
+    "commands": [{
+      "id": "a36d1c8f-e8d3-4d81-b7f7-564b56c9c4a7",
+      "comment": "",
+      "command": "open",
+      "target": "https://intertop.ua/uk-ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26492a75-cffd-46e4-9ff6-5e3867ad73cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3444674-a4bb-43e5-9147-2390985614cc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='launguage-select']/div/div/div/div",
+      "targets": [
+        ["css=.lang-name", "css:finder"],
+        ["xpath=//div[@id='launguage-select']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9279b52-ce4f-4f00-b2d7-5a823a269867",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Укр",
+      "targets": [
+        ["linkText=Рус", "linkText"],
+        ["css=.language-select > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рус')]", "xpath:link"],
+        ["xpath=//div[@id='launguage-select']/div/div/div/div[2]/div/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рус')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1b082e-15ff-416e-aa7c-5d933fd8ff51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lang-name",
+      "targets": [
+        ["css=.lang-name", "css:finder"],
+        ["xpath=//div[@id='launguage-select']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be5be5b1-11a6-4776-bbae-d3b697b56c7c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рус",
+      "targets": [
+        ["linkText=Рус", "linkText"],
+        ["css=.language-select > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рус')]", "xpath:link"],
+        ["xpath=//div[@id='launguage-select']/div/div/div/div[2]/div/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рус')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77384b23-214a-4166-86ca-eaefc69e2e25",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex > li:nth-child(1) > a",
+      "targets": [
+        ["linkText=Женщинам", "linkText"],
+        ["css=.flex > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Женщинам')]", "xpath:link"],
+        ["xpath=//div[@id='app_global']/div[2]/div[3]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru-ua/shopping/catalog/women/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Женщинам')]", "xpath:innerText"]
+      ],
+      "value": "Женщинам"
+    }, {
+      "id": "3e3eba88-483b-4bfd-96ae-a36ddc51667d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex > li:nth-child(2) > a",
+      "targets": [
+        ["linkText=Мужчинам", "linkText"],
+        ["css=.flex > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Мужчинам')]", "xpath:link"],
+        ["xpath=//div[@id='app_global']/div[2]/div[3]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru-ua/shopping/catalog/men/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мужчинам')]", "xpath:innerText"]
+      ],
+      "value": "Мужчинам"
+    }, {
+      "id": "ee1b8c71-58c8-49a8-8c7b-a7f9f53fad53",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active > a",
+      "targets": [
+        ["linkText=Детям", "linkText"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Детям')]", "xpath:link"],
+        ["xpath=//div[@id='app_global']/div[2]/div[3]/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ru-ua/shopping/catalog/kids/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Детям')]", "xpath:innerText"]
+      ],
+      "value": "Детям"
+    }, {
+      "id": "b02d8ee0-a64f-4476-ab25-6a24f92ba93c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a74c97dd-e364-433c-88db-1aad43dbc101",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6154067a-b505-4f80-9cfb-8641e307132f"]
+  }],
+  "urls": ["https://intertop.ua/uk-ua/"],
+  "plugins": []
+}
